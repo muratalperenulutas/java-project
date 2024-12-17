@@ -4,6 +4,8 @@
 package org.project;
 
 import org.project.pages.login.LoginPage;
+import org.project.pages.register.RegisterPage;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
@@ -32,8 +34,10 @@ public class App {
         JPanel cardPanel = new JPanel(cardLayout);
 
         LoginPage loginPage = new LoginPage(frame,cardLayout,cardPanel);
+        RegisterPage registerPage = new RegisterPage(frame,cardLayout,cardPanel);
 
         cardPanel.add(loginPage, "loginPage");
+        cardPanel.add(registerPage, "registerPage");
 
         frame.add(cardPanel);
 
