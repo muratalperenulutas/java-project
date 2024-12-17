@@ -1,11 +1,12 @@
 package org.project.data;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class OsData {
+public class OsUtil {
     public static String getUserDataPath(String fileName) {
         String userHome = System.getProperty("user.home");
 
@@ -30,5 +31,15 @@ public class OsData {
         }
 
         return directoryPath.resolve(fileName).toString();
+    }
+    public static void createFileIfNotExists(String path) {
+        File file = new File(path);
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
