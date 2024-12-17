@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d34a91fd-2131-4b9d-9176-4baf8af90c28" name="Changes" comment="Update title based on window size">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/project/pages/login/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/project/pages/login/LoginPanel.java" afterDir="false" />
+    <list default="true" id="d34a91fd-2131-4b9d-9176-4baf8af90c28" name="Changes" comment="Add responsive LoginPage">
       <change afterPath="$PROJECT_DIR$/app/src/main/java/org/project/pages/register/RegisterPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/project/pages/register/RegisterPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/project/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/project/App.java" afterDir="false" />
     </list>
@@ -21,12 +20,32 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="java-project" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,37 +58,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Gradle.java-project:app [:app:org.example.App.main()].executor": "Run",
-    "Gradle.java-project:app [:app:org.project.App.main()].executor": "Run",
-    "Gradle.java-project:app [:app:org.project.pages.LoginPage.main()].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-project:app [:app:org.example.App.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-project:app [:app:org.project.App.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.java-project:app [:app:org.project.pages.LoginPage.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.project.pages.register" />
       <recent name="org.project.pages" />
     </key>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
-      </set>
-    </attachedChunks>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.project.App" />
+      <module name="java-project.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.project.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -82,7 +113,11 @@
       <workItem from="1734372341654" duration="9469000" />
       <workItem from="1734416570941" duration="436000" />
       <workItem from="1734417013396" duration="5014000" />
-      <workItem from="1734426050660" duration="1287000" />
+      <workItem from="1734426050660" duration="1461000" />
+      <workItem from="1734430902514" duration="64000" />
+      <workItem from="1734431059662" duration="283000" />
+      <workItem from="1734433377249" duration="755000" />
+      <workItem from="1734434144249" duration="161000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -100,7 +135,95 @@
       <option name="project" value="LOCAL" />
       <updated>1734422161540</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add responsive LoginPage">
+      <option name="closed" value="true" />
+      <created>1734430706650</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1734430706650</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add responsive LoginPage">
+      <option name="closed" value="true" />
+      <created>1734431135087</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734431135087</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add responsive LoginPage">
+      <option name="closed" value="true" />
+      <created>1734431241540</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1734431241540</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add responsive LoginPage">
+      <option name="closed" value="true" />
+      <created>1734433906547</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1734433906547</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1734433954901</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1734433954901</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1734434013875</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1734434013875</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1734434032542</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734434032542</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update title based on window size">
+      <option name="closed" value="true" />
+      <created>1734434040286</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1734434040286</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add responsive LoginPage">
+      <option name="closed" value="true" />
+      <created>1734434046124</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1734434046124</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add responsive LoginPage">
+      <option name="closed" value="true" />
+      <created>1734434331069</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1734434331069</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add responsive LoginPage">
+      <option name="closed" value="true" />
+      <created>1734435950335</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1734435950335</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +232,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Update title based on window size" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update title based on window size" />
+    <MESSAGE value="Add responsive LoginPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add responsive LoginPage" />
   </component>
 </project>
