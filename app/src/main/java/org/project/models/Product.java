@@ -1,6 +1,8 @@
 package org.project.models;
 
-public class Product {
+import org.project.interfaces.Identifiable;
+
+public class Product implements Identifiable {
     public Integer id;
     public String name;
     public String description;
