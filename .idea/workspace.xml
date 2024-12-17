@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d34a91fd-2131-4b9d-9176-4baf8af90c28" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/project/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/example/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/org/example/AppTest.java" afterDir="false" />
+    <list default="true" id="d34a91fd-2131-4b9d-9176-4baf8af90c28" name="Changes" comment="Update title based on window size">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/project/pages/login/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/project/pages/login/LoginPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/project/pages/register/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/project/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/project/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +41,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.App.executor": "Run",
     "Gradle.java-project:app [:app:org.example.App.main()].executor": "Run",
     "Gradle.java-project:app [:app:org.project.App.main()].executor": "Run",
     "Gradle.java-project:app [:app:org.project.pages.LoginPage.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -56,6 +59,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.project.pages.register" />
       <recent name="org.project.pages" />
     </key>
   </component>
@@ -77,7 +81,8 @@
       <updated>1734372340030</updated>
       <workItem from="1734372341654" duration="9469000" />
       <workItem from="1734416570941" duration="436000" />
-      <workItem from="1734417013396" duration="4331000" />
+      <workItem from="1734417013396" duration="5014000" />
+      <workItem from="1734426050660" duration="1287000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -87,7 +92,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734421874136</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update title based on window size">
+      <option name="closed" value="true" />
+      <created>1734422161540</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734422161540</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Update title based on window size" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update title based on window size" />
   </component>
 </project>
