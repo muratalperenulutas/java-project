@@ -3,6 +3,7 @@
  */
 package org.project;
 
+import org.project.pages.login.LoginPage;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ComponentAdapter;
@@ -27,6 +28,14 @@ public class App {
                     }
                 }
         );
+        CardLayout cardLayout = new CardLayout();
+        JPanel cardPanel = new JPanel(cardLayout);
+
+        LoginPage loginPage = new LoginPage(frame,cardLayout,cardPanel);
+
+        cardPanel.add(loginPage, "loginPage");
+
+        frame.add(cardPanel);
 
         frame.setVisible(true);
     }
