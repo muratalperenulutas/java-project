@@ -1,4 +1,4 @@
-package org.project.pages.register;
+package org.project.gui.pages.register;
 
 import javax.swing.*;
 import java.awt.*;

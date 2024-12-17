@@ -1,23 +1,23 @@
-package org.project.pages.login;
+package org.project.gui.pages.register;
 
 import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
 
-public class LoginPage extends JPanel {
+public class RegisterPage extends JPanel {
     private int screenwidth;
     private int screenheight;
 
-    public LoginPage(JFrame frame, CardLayout cardLayout, JPanel cardPanel) {
+    public RegisterPage(JFrame frame, CardLayout cardLayout, JPanel cardPanel) {
         setBackground(Color.YELLOW);
         setLayout(null);
         setPreferredSize(new Dimension(400, 500));
 
-        LoginPanel loginPanel = new LoginPanel( cardLayout, cardPanel);
+        RegisterPanel registerPanel = new RegisterPanel( cardLayout, cardPanel);
 
-        updatePanelPositionToCenter(this, loginPanel);
+        updatePanelPositionToCenter(this, registerPanel);
 
-        add(loginPanel);
+        add(registerPanel);
 
         frame.addComponentListener(new ComponentAdapter() {
             @Override
@@ -27,10 +27,9 @@ public class LoginPage extends JPanel {
 
                 setScreenWidth(w);
                 setScreenHeight(h);
-                updatePanelPositionToCenter(LoginPage.this, loginPanel);
+                updatePanelPositionToCenter(RegisterPage.this, registerPanel);
                 frame.revalidate();
                 frame.repaint();
-
             }
         });
     }
@@ -38,7 +37,7 @@ public class LoginPage extends JPanel {
     private void updatePanelPositionToCenter(JPanel outerPanel, JPanel innerPanel) {
         Dimension outerPanelSize = outerPanel.getPreferredSize();
         Dimension innerPanelSize = innerPanel.getPreferredSize();
-
+        //System.out.println(innerPanelSize+" "+screenheight+" "+screenwidth); //it works even if the panel closed
         int x = (screenwidth - innerPanelSize.width) / 2;
         int y = (screenheight - innerPanelSize.height) / 2;
 
@@ -61,3 +60,4 @@ public class LoginPage extends JPanel {
         this.screenheight = screenheight;
     }
 }
+

@@ -1,4 +1,4 @@
-package org.project.pages.login;
+package org.project.gui.pages.login;
 
 import javax.swing.*;
 import java.awt.*;
