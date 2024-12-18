@@ -13,7 +13,7 @@ public class LoginPage extends JPanel {
         setLayout(null);
         setPreferredSize(new Dimension(400, 500));
 
-        LoginPanel loginPanel = new LoginPanel( cardLayout, cardPanel);
+        LoginPanel loginPanel = new LoginPanel(frame,cardLayout, cardPanel);
 
         updatePanelPositionToCenter(this, loginPanel);
 

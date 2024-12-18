@@ -1,11 +1,15 @@
 package org.project.gui.pages.login;
 
+import org.project.gui.frames.Home;
+import org.project.models.User;
+import org.project.services.UserService;
+
 import javax.swing.*;
 import java.awt.*;
 
 public class LoginPanel extends JPanel {
 
-    public LoginPanel(CardLayout cardLayout, JPanel cardPanel) {
+    public LoginPanel(JFrame frame,CardLayout cardLayout, JPanel cardPanel) {
         setBackground(Color.BLUE);
         setLayout(null);
 
@@ -24,7 +28,20 @@ public class LoginPanel extends JPanel {
         JButton loginButton = new JButton("Login");
         loginButton.setFont(new Font("Arial", Font.BOLD, 14));
         loginButton.addActionListener(e -> {
-            cardLayout.show(cardPanel, "homePage");
+            if (emailField.getText().isEmpty() || passwordField.getPassword().length == 0 ) {
+                JOptionPane.showMessageDialog(frame, "Please fill all the required fields!", "Error", JOptionPane.ERROR_MESSAGE);
+            }else {
+                String email = emailField.getText();
+                String password = String.valueOf(passwordField.getPassword());
+                User user= UserService.authenticate(email, password);
+                if (user != null) {
+                    JOptionPane.showMessageDialog(frame, "Login Successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
+                    new Home();
+                    frame.dispose();
+                }else{
+                    JOptionPane.showMessageDialog(frame, "Invalid email or password!", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
         });
 
         JButton registerButton = new JButton("Register");

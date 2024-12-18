@@ -1,5 +1,8 @@
 package org.project.gui.pages.register;
 
+import org.project.models.User;
+import org.project.services.UserService;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -36,7 +39,24 @@ public class RegisterPanel extends JPanel {
         JButton registerButton = new JButton("Register");
         registerButton.setFont(new Font("Arial", Font.BOLD, 14));
         registerButton.addActionListener(e -> {
-            cardLayout.show(cardPanel, "registerPage");
+            if(emailField.getText().isEmpty() || passwordField.getPassword().length == 0  || confirmPasswordField.getPassword().length == 0 ) {
+                JOptionPane.showMessageDialog(null, "Please fill all the required fields");
+            }else if(!new String(passwordField.getPassword()).equals(new String(confirmPasswordField.getPassword()))) {
+                JOptionPane.showMessageDialog(null, "Passwords do not match");
+            } else{
+                String email = emailField.getText();
+                String password = String.valueOf(passwordField.getPassword());
+                User user = new User(email, password);
+                try {
+                    UserService.addUser(user);
+                    JOptionPane.showMessageDialog(null, "Successfully registered");
+                    cardLayout.show(cardPanel, "loginPage");
+                }catch (IllegalArgumentException ex) {
+                    if(ex.getMessage().equals("User with this already exists")) {
+                        JOptionPane.showMessageDialog(null,"Email already exists");
+                    }
+                }
+            }
         });
 
         registerLabel.setBounds(90, 20, 150, 40);
