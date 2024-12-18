@@ -4,6 +4,7 @@
 package org.project;
 
 import org.project.gui.frames.Entry;
+import org.project.gui.frames.Home;
 
 import javax.swing.*;
 
@@ -12,7 +13,8 @@ public class App {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new Entry();
+                //new Entry();
+                new Home();
             }
         });
     }
