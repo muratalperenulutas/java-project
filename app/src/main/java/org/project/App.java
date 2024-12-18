@@ -3,18 +3,27 @@
  */
 package org.project;
 
+import org.project.data.JsonRepository;
+import org.project.data.OsUtil;
 import org.project.gui.frames.Entry;
 import org.project.gui.frames.Home;
+import org.project.models.User;
+import org.project.services.UserService;
 
 import javax.swing.*;
 
 public class App {
     public static void main(String[] args) {
+        String filePath= OsUtil.getUserDataPath("users.json");
+        OsUtil.createFileIfNotExists(filePath);
+
+        UserService userService=new UserService(new JsonRepository<>(filePath, User[].class));
+
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                //new Entry();
-                new Home();
+                new Entry();
+                //new Home();
             }
         });
     }
